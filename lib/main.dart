@@ -17,9 +17,16 @@ class BlogApp extends StatelessWidget {
             labelColor: Colors.white,
             indicatorColor: Colors.white,
           ),
+          floatingActionButtonTheme: FloatingActionButtonThemeData(
+              shape: CircleBorder(),
+              backgroundColor: Colors.green,
+              foregroundColor: Colors.white70),
           appBarTheme: AppBarTheme(
               backgroundColor: Colors.black,
-              titleTextStyle: TextStyle(color: Colors.white))),
+              titleTextStyle: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold))),
       title: "Blog App",
       home: HomeScreen(),
     );
