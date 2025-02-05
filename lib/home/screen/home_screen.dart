@@ -19,27 +19,30 @@ class HomeScreen extends StatelessWidget {
         body: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
-              expandedHeight: 110.0,
+              expandedHeight: 200.0,
               floating: true,
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
-                titlePadding: EdgeInsets.only(left: 15, bottom: 20),
+                titlePadding: EdgeInsetsDirectional.only(
+                  start: 30.0,
+                  bottom: 80.0,
+                ),
                 title: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'BLOGS',
+                      "Home",
                       style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w400),
+                          color: Colors.grey,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold),
                     ),
                     IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.more_vert,
-                          color: Colors.white,
-                        ))
+                          size: 15,
+                        )),
                   ],
                 ),
               ),
